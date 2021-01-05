@@ -16,6 +16,7 @@ body {
 #container {
     width: 87%;
     padding-top: 148px;
+    padding-bottom: 85px;
 }
 
 main {
@@ -43,6 +44,12 @@ main {
     top: -108px;
     display: flex;
     justify-content: center;
+}
+
+#images div {
+    background-image: url("../images/illustration-woman-online-mobile.svg");
+    width: 237px;
+    height: 180px;
 }
 
 .quest-resp {
@@ -84,4 +91,42 @@ hr {
 .arrow {
     display: inline-block;
     text-align: right;
+}
+
+@media only screen and (min-width:920px) {
+    #container {
+        width: 920px;
+        height: auto;
+    }
+    #images div {
+        background-image: url("../images/illustration-woman-online-desktop.svg");
+        width: 100%;
+        height: 359px;
+        background-repeat: no-repeat;
+    }
+    #images {
+        top: 60px;
+        width: 472px;
+        position: absolute;
+        left: -84px;
+        height: 100%;
+        overflow: hidden;
+    }
+    #faq {
+        background-color: #FFFFFF;
+        border-radius: 23px;
+        position: relative;
+        padding-left: 475px;
+        padding-top: 65px;
+        overflow: hidden;
+        background-image: url("../images/bg-pattern-desktop.svg");
+        background-position: -570px -300px;
+        background-repeat: no-repeat;
+    }
+    .quest-resp {
+        width: 350px;
+    }
+    h1 {
+        text-align: left;
+    }
 }
