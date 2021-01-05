@@ -33,6 +33,7 @@ main {
     background-image: url("../images/bg-pattern-mobile.svg");
     background-position: center top;
     background-repeat: no-repeat;
+    padding-bottom: 48px;
 }
 
 #images {
@@ -53,6 +54,7 @@ main {
     color: #1E1F36;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .response {
@@ -82,8 +84,4 @@ hr {
 .arrow {
     display: inline-block;
     text-align: right;
-}
-
-.bottom {
-    margin-bottom: 48px;
 }
