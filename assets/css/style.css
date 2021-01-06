@@ -64,6 +64,10 @@ main {
     cursor: pointer;
 }
 
+.question:hover {
+    color: #F47B56;
+}
+
 .response {
     font-size: 12px;
     line-height: 18px;
@@ -93,10 +97,15 @@ hr {
     text-align: right;
 }
 
+#cube {
+    display: none;
+}
+
 @media only screen and (min-width:920px) {
     #container {
         width: 920px;
         height: auto;
+        position: relative;
     }
     #images div {
         background-image: url("../images/illustration-woman-online-desktop.svg");
@@ -108,17 +117,16 @@ hr {
         top: 60px;
         width: 472px;
         position: absolute;
-        left: -84px;
+        left: -80px;
         height: 100%;
-        overflow: hidden;
     }
     #faq {
+        overflow: hidden;
         background-color: #FFFFFF;
         border-radius: 23px;
         position: relative;
         padding-left: 475px;
         padding-top: 65px;
-        overflow: hidden;
         background-image: url("../images/bg-pattern-desktop.svg");
         background-position: -570px -300px;
         background-repeat: no-repeat;
@@ -128,5 +136,14 @@ hr {
     }
     h1 {
         text-align: left;
+    }
+    #cube {
+        display: block;
+        position: absolute;
+        top: 345px;
+        position: absolute;
+        left: -97px;
+        overflow: auto;
+        z-index: 1;
     }
 }
